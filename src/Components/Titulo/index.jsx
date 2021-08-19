@@ -1,6 +1,3 @@
-import React from "react";
+import TituloPresentational from './presentational'
 
-const Titulo = ({ children }) => {
-  return <h1 className="titulo">{children}</h1>;
-};
-export default Titulo;
+export default TituloPresentational
