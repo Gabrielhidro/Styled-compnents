@@ -1,23 +1,16 @@
 import React from "react"
 import { Box } from "../Conta/styles"
 import { extratoLista } from "../../info"
-import { Card, ButtonExtrato } from "./styles"
+import Items from "./components/Items"
+import { ButtonExtrato } from "./styles"
 
-export const Extrato = () => {
+export const Extrato = (props) => {
    return(
    <Box>
-
-    {extratoLista.updates.map(({date, from, id, type, value}) => {
+    {extratoLista.updates.map(({ id, type, from, value, date }) => {
       return (
-        <>
-          <Card key={id}>
-            <p>{date}</p>
-            <p>{from}</p>
-            <p>{type}</p>
-            <p>{value}</p>
-          </Card>
-        </>
-      )
+        <Items key={id} type={type} from={from} value={value} date={date} />
+      );
     })}
     <ButtonExtrato>
       Ver mais

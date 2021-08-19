@@ -1,0 +1,5 @@
+export {default as Alimentacao} from './alimentacao.svg'
+export {default as Outros} from './outros.svg'
+export {default as Saude} from './saude.svg'
+export {default as Transporte} from './transporte.svg'
+export {default as Utilidades} from './utilidades.svg'
